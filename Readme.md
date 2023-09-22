@@ -1,6 +1,6 @@
 <h1>Dashboard</h1>
 
-This project focuses on crafting a comprehensive adaptable and visually appealing dashboard that mirrors the provided design. Additionally, the goal involves creating authentication system via Google.
+This project focuses on crafting a comprehensive adaptable and visually appealing dashboard . Additionally, the goal involves creating authentication system via Google.
 
 <h3>Features</h3>
 <ul>
