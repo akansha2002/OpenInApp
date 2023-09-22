@@ -210,31 +210,32 @@ const BottomCards = () => {
               </div>
             )}
             {basic && (
-              <div className="flex flex-col justify-between p-4 ">
-                <div className="flex flex-col mb-3">
-                  <label className="mb-5" htmlFor="instaLink">Instagram Link <span className="font-extralight">(Optional)</span></label>
-                  <input
-                    type="text"
-                    id="instaLink"
-                    value={instaLink}
-                    onChange={(e) => setInstaLink(e.target.value)}
-                    placeholder="Eg. ..instagram.com/username"
-                    className="py-[16px] px-[12px] border border-gray-300 rounded-[12px] mb-5"
-                  />
-                </div>
-                <div className="flex flex-col mb-3">
-                  <label className="mb-5" htmlFor="ytLink">Youtube Link <span className="font-extralight">(Optional)</span></label>
-                  <input
-                    type="text"
-                    id="ytLink"
-                    value={ytLink}
-                    onChange={(e) => setYtLiink(e.target.value)}
-                    placeholder="Eg. ..youtebe/username"
-                    className="py-[16px] px-[12px] border border-gray-300 rounded-[12px]"
-                  />
-                </div>
-              </div>
-            )}
+  <div className="flex flex-col justify-between p-4">
+    <div className="flex flex-col mb-3">
+      <label className="mb-5 text-underline" htmlFor="instaLink">Instagram Link <span className="font-extralight">(Optional)</span></label>
+      <input
+        type="text"
+        id="instaLink"
+        value={instaLink}
+        onChange={(e) => setInstaLink(e.target.value)}
+        placeholder="Eg. ..instagram.com/username"
+        className="py-[16px] px-[12px] border border-gray-300 rounded-[12px] mb-5 "
+      />
+    </div>
+    <div className="flex flex-col mb-3">
+      <label className="mb-5 text-underline" htmlFor="ytLink">Youtube Link <span className="font-extralight">(Optional)</span></label>
+      <input
+        type="text"
+        id="ytLink"
+        value={ytLink}
+        onChange={(e) => setYtLiink(e.target.value)}
+        placeholder="Eg. ..youtube.com/username"
+        className="py-[16px] px-[12px] border border-gray-300 rounded-[12px] "
+      />
+    </div>
+  </div>
+)}
+
           </div>
           <div className="mr-4 h-[88px] flex justify-end">
             <button
@@ -301,7 +302,7 @@ const BottomCards = () => {
                       alt="Phone"
                       width={36}
                       height={36}
-                      className="p-2 rounded-[20px] cursor-pointer  transition duration-500 bg-[#E9F9EB]"
+                      className="p-2 rounded-[20px] cursor-pointer  transition duration-500 bg-[#E9F9EB] mr-5"
                     />
                     <p>{profilephone}</p>
                   </div>
@@ -311,9 +312,9 @@ const BottomCards = () => {
                       alt="Instagram"
                       width={36}
                       height={36}
-                      className="p-2 rounded-[20px] cursor-pointer  transition duration-500 bg-[#FFE9EC]"
+                      className="p-2 rounded-[20px] cursor-pointer  transition duration-500 bg-[#FFE9EC] mr-5 "
                     />
-                    <span>{profileinstaLink}</span>
+                    <span className="text-underline">{profileinstaLink }</span>
                   </div>
                 </div>
                 <div className="flex justify-between items-center p-2 card-id">
@@ -323,7 +324,7 @@ const BottomCards = () => {
                       alt="Email"
                       width={36}
                       height={36}
-                      className="p-2 rounded-[20px] cursor-pointer  transition duration-500 bg-[#EBE6F9]"
+                      className="p-2 rounded-[20px] cursor-pointer  transition duration-500 bg-[#EBE6F9] mr-5"
                     />
                     <span>{profileemail}</span>
                   </div>
@@ -333,7 +334,7 @@ const BottomCards = () => {
                       alt="Youtube"
                       width={36}
                       height={36}
-                      className="p-2 rounded-[20px] cursor-pointer transition duration-500 bg-[#FFE9E9]"
+                      className="p-2 rounded-[20px] cursor-pointer transition duration-500 bg-[#FFE9E9] mr-5"
                     />
                     <span>{profileytLink}</span>
                   </div>
